@@ -15,15 +15,15 @@ public class HelloServiceMain {
 			//将远程服务实现类绑定到指定的RMI地址上，执行这个方法后，相当于发布了RMI服务 
 			Naming.bind("rmi://localhost:8889/HelloService", helloService);
 			System.out.println("远程对象绑定成功！");
-		} catch (RemoteException e) {
-			System.out.println("创建远程对象发生异常！");
+		} catch (MalformedURLException e) {
+			System.out.println("发生URL协议异常！");
 			e.printStackTrace();
 		} catch (AlreadyBoundException e) {
 			System.out.println("发生重复绑定对象异常！");
 			e.printStackTrace();
-		} catch (MalformedURLException e) {
-			System.out.println("发生URL协议异常！");
+		} catch (RemoteException e) {
+			System.out.println("创建远程对象发生异常！");
 			e.printStackTrace();
-		}
+		} 
 	}
 }
