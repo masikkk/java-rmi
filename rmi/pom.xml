@@ -7,5 +7,6 @@
   <packaging>pom</packaging>
   <modules>
     <module>rmi-server</module>
+    <module>rmi-client</module>
   </modules>
 </project>
