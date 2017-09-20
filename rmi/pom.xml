@@ -18,5 +18,6 @@
 		<module>rmi-server</module>
 		<module>rmi-client</module>
 		<module>rmi-spring-server</module>
-  </modules>
+		<module>rmi-spring-client</module>
+	</modules>
 </project>
