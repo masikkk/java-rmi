@@ -12,7 +12,7 @@ import com.masikkk.rmi.spring.server.HelloSpringService;
 @ContextConfiguration(locations={"classpath:applicationContext-client.xml"})
 public class HelloSpringServiceTest {
 	@Autowired
-	HelloSpringService helloSpringService;
+	HelloSpringService helloSpringService; //自动装配rmiClient
 	
 	@Test
 	public void test(){

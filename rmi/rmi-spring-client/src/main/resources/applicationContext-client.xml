@@ -4,6 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans 
        http://www.springframework.org/schema/beans/spring-beans.xsd">
     
+    <!-- 客户端代理 -->
     <bean id="rmiClient" class="org.springframework.remoting.rmi.RmiProxyFactoryBean">
         <property name="serviceInterface" value="com.masikkk.rmi.spring.server.HelloSpringService"></property>
         <property name="serviceUrl" value="rmi://localhost:8899/rmiHelloSpringService"></property>
